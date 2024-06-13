@@ -8,7 +8,7 @@ public class Student {
     private String lastName;
     private int gradeYear;
     private String studentID;
-    private String courses;
+    private String courses = null;
     private int tuitionBalance;
     private static int coursePrice = 700;
     private static int id = 1000;
@@ -24,12 +24,28 @@ public class Student {
         System.out.println(firstName + " " + lastName + " " + gradeYear);
 
         setStudentID();
-        System.out.println(firstName + " " + lastName + " " + "Grade: " + gradeYear + " " + "ID: " + studentID);
-    }
+        System.out.println("Name: " + firstName + " " + lastName + " " + "Grade: " + gradeYear + " " + "ID: " + studentID);
+    };
 
     private void setStudentID() {
         id++;
         this.studentID = gradeYear + "" + id;
+    };
+
+    public void enroll() {
+       do {
+           System.out.println("Enter course to enroll (press Q to quit): ");
+           Scanner in = new Scanner(System.in);
+           String course = in.nextLine();
+           if (!course.equals("Q")) {
+               courses = courses + "\n" + course;
+               tuitionBalance = tuitionBalance + coursePrice;
+           } else { break; }
+       } while ( 1 != 0 );
+
+    System.out.println("Enrolled in: " + courses);
+    System.out.println("Tuition balance: " + tuitionBalance);
+
     }
-}
+};
 
