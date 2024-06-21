@@ -21,10 +21,9 @@ public class Student {
         this.lastName = scanner.nextLine();
         System.out.println("1 - Freshman\n2 - Sophomore\n3 - Junior\n4 - Senior\n Enter the grade year of the student: ");
         this.gradeYear = scanner.nextInt();
-        System.out.println(firstName + " " + lastName + " " + gradeYear);
 
         setStudentID();
-        System.out.println("Name: " + firstName + " " + lastName + " " + "Grade: " + gradeYear + " " + "ID: " + studentID);
+        System.out.println("Name: " + firstName + " " + lastName + "\n" + "Grade: " + gradeYear + "\n" + "ID: " + studentID);
     };
 
     private void setStudentID() {
@@ -34,7 +33,7 @@ public class Student {
 
     public void enroll() {
        do {
-           System.out.println("Enter course to enroll (press Q to quit): ");
+           System.out.println("Enter course to enroll (Q to quit): ");
            Scanner in = new Scanner(System.in);
            String course = in.nextLine();
            if (!course.equals("Q")) {
@@ -43,9 +42,28 @@ public class Student {
            } else { break; }
        } while ( 1 != 0 );
 
-    System.out.println("Enrolled in: " + courses);
-    System.out.println("Tuition balance: " + tuitionBalance);
+        System.out.println("Enrolled in: " + courses);
+        System.out.println("Tuition balance: " + tuitionBalance);
+    };
 
+    // View balance
+    public void viewBalance() {
+        System.out.println("Your balance is: $" + tuitionBalance);
     }
+
+    // Pay tuition
+    public void payTuition() {
+        System.out.println("Inform your payment: $");
+        Scanner in = new Scanner(System.in);
+        int payment = in.nextInt();
+        tuitionBalance = tuitionBalance - payment;
+        System.out.println("Your payment: $" + payment);
+        viewBalance();
+    }
+
+    // Show status
+
+
+
 };
 

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3d46607-3996-43ef-9e43-c5ac4fbdc2cf" name="Changes" comment="Create method to set student ID, along with name and grade">
+    <list default="true" id="d3d46607-3996-43ef-9e43-c5ac4fbdc2cf" name="Changes" comment="Create enroll method, which permits enrolling of a student in any course">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StudentManagementSystem/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StudentManagementSystem/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/StudentManagementSystem/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StudentManagementSystem/Student.java" afterDir="false" />
@@ -103,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718311524349</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Create enroll method, which permits enrolling of a student in any course">
+      <option name="closed" value="true" />
+      <created>1718315087610</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718315087610</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,6 +130,7 @@
     <MESSAGE value="Move files from one directory to another" />
     <MESSAGE value="Create constructor for prompting user to enter name and year of each student" />
     <MESSAGE value="Create method to set student ID, along with name and grade" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create method to set student ID, along with name and grade" />
+    <MESSAGE value="Create enroll method, which permits enrolling of a student in any course" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create enroll method, which permits enrolling of a student in any course" />
   </component>
 </project>
